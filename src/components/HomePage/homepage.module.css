@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.homepage_container {
+    display: flex;
+    flex-direction: row;
+}
+
+.left_container {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+}
+
+.notes_names {
+    max-height: 85vh;
+    overflow-y: auto;
+}
+
+
+.left_container .notes_names::-webkit-scrollbar {
+    width: 8px;
+    height: 7px;
+}
+
+.left_container .notes_names::-webkit-scrollbar-track {
+    background-color: #D9D9D9;
+    width: 0.625rem;
+    height: 5.625rem;
+    flex-shrink: 0;
+    border-radius: 0.34375rem;
+}
+
+.left_container .notes_names::-webkit-scrollbar-thumb {
+    width: 0.4rem;
+    height: 3.4375rem;
+    flex-shrink: 0;
+    border-radius: 0.28125rem;
+    background: #FFF;
+}
+
+.right_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+    height: 100vh;
+    flex-shrink: 0;
+    background: #DAE5F5;
+}
+
+.pocket_notes {
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.1875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.04375rem;
+    text-align: center;
+}
+
+.add_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 20%;
+    top: 80%;
+    bottom: 5%;
+    right: 80%;
+    width: 5.8125rem;
+    height: 5.8125rem;
+    border-radius: 50px;
+    background: #16008B;
+}
+
+.add_icon {
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 4.375rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 97.688%;
+    letter-spacing: 0.0875rem;
+}
+
+.right_container h1 {
+    padding-top: 0%;
+    margin-top: 0%;
+}
+
+.right_container p {
+    padding-top: 0%;
+    margin-top: 0%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+    text-align: left;
+
+}
+
+.right_container img {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.encrypted {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 10px;
+}
+
+.encrypted img {
+    width: 1.0625rem;
+    height: 1.3125rem;
+    padding-top: 3px;
+    padding-right: 5px;
+}
+
+.encrypted p {
+    padding: 0%;
+    margin: 0%;
+    width: 13.5625rem;
+    color: #292929;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.15rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2rem;
+    letter-spacing: 0.0275rem;
+}
+
+.name_box {
+    display: flex;
+    padding-left: 2rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.name_box div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4.30631rem;
+    height: 4.30631rem;
+    flex-shrink: 0;
+    border-radius: 50px;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 97.688%;
+    letter-spacing: 0.03rem;
+}
+
+.name_box p {
+    width: auto;
+    padding-left: 1.5rem;
+    color: #000;
+    font-family: Roboto;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.03rem;
+}
+
+
+.name_box {
+    cursor: pointer;
+}
+
+.name_box.selected {
+    width: auto;
+    height: 6rem;
+    flex-shrink: 0;
+    border-radius: 1rem;
+    border: 0px solid rgba(47, 47, 47, 0.17);
+    background: rgba(47, 47, 47, 0.17);
+}
+
+
+/* Existing CSS... */
+
+@media only screen and (max-width: 768px) {
+    .left_container {
+        width: 100%;
+        height: auto;
+    }
+
+    .add_button {
+        width: 4.6875rem;
+        height: 4.6875rem;
+        position: fixed;
+        left: 70%;
+        top: 80%;
+        bottom: 5%;
+        right: 8%;
+    }
+    .name_box {
+        padding-left: 1rem;
+    }
+
+    .name_box div {
+        width: 3.87594rem;
+        height: 3.87594rem;
+    }
+
+    .name_box p {
+        font-size: 1.16275rem;
+        letter-spacing: 0.02325rem;
+    }
+
+    /* Scrollbar adjustments for mobile */
+    .left_container .notes_names::-webkit-scrollbar {
+        width: 8px;
+        height: 7px;
+    }
+
+    .left_container .notes_names::-webkit-scrollbar-track {
+        background-color: #D9D9D9;
+        width: 0.625rem;
+        height: 5.625rem;
+        flex-shrink: 0;
+        border-radius: 0.34375rem;
+    }
+
+    .left_container .notes_names::-webkit-scrollbar-thumb {
+        width: 0.4rem;
+        height: 3.4375rem;
+        flex-shrink: 0;
+        border-radius: 0.28125rem;
+        background: #FFF;
+    }
+}
+
+/* Remaining existing CSS... */
