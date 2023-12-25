@@ -14,6 +14,8 @@ body {
     display: flex;
     flex-direction: column;
     width: 30vw;
+    overflow: hidden;
+
 }
 
 .notes_names {
@@ -189,7 +191,6 @@ body {
 }
 
 
-/* Existing CSS... */
 
 @media only screen and (max-width: 768px) {
     .left_container {
@@ -220,7 +221,6 @@ body {
         letter-spacing: 0.02325rem;
     }
 
-    /* Scrollbar adjustments for mobile */
     .left_container .notes_names::-webkit-scrollbar {
         width: 8px;
         height: 7px;
@@ -243,4 +243,3 @@ body {
     }
 }
 
-/* Remaining existing CSS... */
